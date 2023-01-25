@@ -1,0 +1,28 @@
+## IDF Component Manager Manifest File
+
+# Version of the component [Required]
+# It should follow https://semver.org/spec/v2.0.0.html spec.
+version: "1.0.0"
+
+# List of supported targets [Optional]
+# If missing all targets are considered to be supported
+targets:
+  - esp32
+  - esp32s3
+
+# Short description for the project [Recommended]
+description: Ethernet Driver
+# Github repo or a home  [Recommended]
+url: https://github.com/Legytma/esp-idf-ethernet-driver.git
+
+# List of dependencies [Optional]
+# All dependencies of the component should be published in the same registry.
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=4.1.0"
+
+  # Put list of dependencies here
+  Legytma/log_utils:
+    # version: ~1.0.0
+    git: ssh://git@github.com:Legytma/esp-idf-log-utils.git
