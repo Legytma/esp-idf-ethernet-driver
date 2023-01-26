@@ -25,4 +25,4 @@ dependencies:
   # Put list of dependencies here
   Legytma/log_utils:
     # version: ~1.0.0
-    git: ssh://git@github.com:Legytma/esp-idf-log-utils.git
+    git: https://github.com/Legytma/esp-idf-log-utils.git
